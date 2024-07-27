@@ -1,0 +1,215 @@
+:root {
+    --FEcolor: #8c2d19;
+    --ltrwhite: #FFFFFF;
+    --hovercolor: #595959;
+    --weakwhite: #e9f7f6;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    * {
+      scroll-behavior: smooth;
+    }
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  *, *::before, *::after {
+      box-sizing: inherit;
+  }
+  
+  body {
+    margin: 0;
+    display: block;
+    font-family: Poppins, sans-serif;
+    letter-spacing: 0.1rem;
+  }
+  
+  navbar {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--FEcolor);
+  }
+  
+  navbar ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  navbar a {
+    display: block;
+    padding: 1.4rem 2.5rem;
+    font-size: 1.4rem;
+    color: var(--ltrwhite);
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  navbar a:hover, .btn:hover {
+    background-color: var(--hovercolor);
+  }
+  
+  #welcome-section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(
+      -169deg,
+      #0d0c0c 15%,
+      #606d71
+    );
+  }
+  #welcome-section h1, #contact h1, #contact h2 {
+    color: var(--weakwhite);
+    }
+  
+  #welcome-section h1, #contact h1 {
+    font-size: 2.5rem;
+    line-height: 1.5;
+    padding-bottom: 1rem;
+    text-align: center;
+  }
+  
+  #welcome-section h2 {
+    text-align: center;
+    margin: 0 2rem;
+    font-size: 1.35rem;
+    font-weight: bold;
+    color: #f0cca3;
+  }
+  
+  #projects {
+    width: 100%;
+    text-align: center;
+    padding: 10rem 0 6rem;
+    background: linear-gradient(
+      #F6F5F0,
+      #eeebe2
+    );
+  }
+  
+  #projects h2 {
+    font-size: 2.2rem;
+    color: var(--FEcolor);
+    margin: 0 auto 3rem;
+    font-weight: bold;
+  }
+  
+  #projects div {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 2rem;
+    margin: 0 auto 3.5rem;
+    padding: 20px 10px;
+  }
+  
+  .project-tile {
+    border: 2px solid black;
+    color: white;
+    font-weight: bold;
+  }
+  
+  #projects p {
+    border-top: 2px solid black;
+    padding: 1.5rem;
+    background-color: #7d392c; 
+  }
+  
+  @media screen and (max-width: 700px) {
+    img {
+      width: 100%;
+      max-width: 300px;
+      height: 200px;
+      object-fit: cover;
+    }
+  }
+  
+  @media screen and (min-width: 700px) {
+    img {
+      width: 100%;
+      max-width: 400px;
+      height: 300px;
+      object-fit: cover;
+    }
+  }
+  
+  @media screen and (min-width: 2000px) {
+    img {
+      width: 100%;
+      max-width: 560px;
+      height: 400px;
+      object-fit: cover;
+    }
+  }
+  
+  .project-tile:hover p {
+    background-color: var(--hovercolor) !important;
+  }
+  
+  .btn {
+    font-weight: bold;
+    padding: 10px;
+    background-color: #7d392c;
+    color: white;
+    border: 2px solid black;
+  }
+  
+  .fa-chevron-right {
+    padding-left: 6px;
+  }
+  
+  #contact {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    height: 85vh;
+    background: linear-gradient(
+      -15deg,
+      #0d0c0c 15%,
+      #606d71
+    );
+  }
+  
+  #contact h2 {
+    font-size: 1.35rem;
+    text-align: center;
+    font-weight: normal;
+    padding-bottom: 4rem;
+  }
+  
+  .fa-github {
+    font-size: 42px;
+    color: var(--weakwhite);
+  }
+  
+  #contact a {
+    text-decoration: none;
+    font-size: 2rem;
+    color: var(--weakwhite);
+    transition: transform 0.3s ease-out;
+  }
+  
+  #contact a:hover .fa {
+    color: #FF9900;
+  } 
+  
+  #contact a:hover {
+    transform: translateY(-10px);
+  } 

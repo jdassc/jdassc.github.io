@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width-device-width, initial-scale=1.0" />
+    <title>Mourning routine sourvey</title>
+    <link rel="stylesheet" href="MorningRoutineSurvey.css" />
+  </head>
+  <body>
+    <h1 id="title" class="title">Mourning routine sourvey</h1>
+    <p id="description"><i>Thanks for helping us gather insight into the daily habits of individuals to better understand morning patterns and trends.</i></p>
+    <div class="form-section">
+        <form id="survey-form">
+        <fieldset>
+          <label id="name-label">First and Last name: <input id="name" type="text" placeholder="Enter your First and Last name" required /></label>
+          <label id="email-label">Email: <input id="email" type="email" placeholder="Enter your email" required /></label>
+          <label id="number-label">Age: <input id="number" type="number" min="0" max="140" placeholder="Enter your age" required /></label>
+        </fieldset>
+        <fieldset>
+          <label class="wake-up">What time do you usually wake up in the morning?</label>
+          <label for="time-5AM"><input type="radio" id="time-5AM" name="time" value="5AM" class="inline" /> 5:00 AM</label>         
+            <label for="time-6AM"><input type="radio" id="time-6AM" name="time" value="6AM" class="inline" /> 6:00 AM</label>
+            <label for="time-7AM"><input type="radio" id="time-7AM" name="time" value="7AM" class="inline" /> 7:00 AM</label>
+            <label for="time-8AM"><input type="radio" id="time-8AM" name="time" value="8AM" class="inline" /> 8:00 AM</label>
+            <label for="time-other"><input type="radio" id="time-other" name="time" value="other" class="inline" /> Other</label>
+          <label>Do you shower in the morning?
+            <select id="dropdown">
+              <option value="">(select one)</option>
+              <option value="1">Yes</option>
+              <option value="2">No</option>
+            </select>
+          </label>
+          <label class="morn-activ">Do you practice any of this activities in the morning?</label>
+          <label for="exercise"><input id="workout" type="checkbox" name="activity" value="workout" class="inline" /> Workout</label>
+          <label for="mediation"><input id="meditation" type="checkbox" name="activity" value="meditation" class="inline" /> Meditation</label>
+          <label for="run"><input id="run" type="checkbox" name="activity" value="run" class="inline" /> Run</label>
+          <label for="watch-tv"><input id="watch-tv" type="checkbox" name="activity" value="watch-tv" class="inline" /> Watch TV</label>
+          <label for="play-videogames"><input id="play-videogames" type="checkbox" name="activity" value="play-videogames" class="inline" /> Play videogames</label>
+          <label>Do you have breakfast?
+            <select id="dropdown2">
+              <option value="d">(select one)</option>
+              <option value="d1">Yes</option>
+              <option value="d2">No</option>
+            </select>
+          </label>
+          <label for="breakfast">If you do, tell us what do you eat: 
+            <textarea id="breakfast" name="breakfast" rows="6" cols="40" placeholder="Enter breakfast details..."></textarea>
+          </label>
+          <input id="submit" type="submit" value="Submit" class="submit"/>
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>

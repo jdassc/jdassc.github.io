@@ -1,0 +1,81 @@
+body {
+    background-image: url("https://media.istockphoto.com/id/1399284137/vector/sky-landscape-illustration.jpg?s=612x612&w=0&k=20&c=i_IJnhRlBaIDvvswDzG4acQPHQKAn3dWdJR2bh5BS2c=");
+    background-size: cover;
+    font-family: sans-serif;
+    padding: 20px;
+  }
+  
+  h1, 
+  p {
+    text-align: center;
+  }
+  
+  p {
+    font-size: 18px
+  }
+  
+  label {
+    display: block;
+    margin: 5px;
+  }
+  
+  fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .inline {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+  }
+  
+  input,
+  textarea {
+    margin: 10px 0 20px 0;
+    width: 100%;
+    min-height: 2em;
+  }
+  
+  textarea {
+    font-size: 17px;
+    font-family: sans-serif;
+  }
+  
+  select {
+    margin: 10px 0 20px 10px;
+    width: 16%;
+    min-height: 2em;
+  }
+  
+  .form-section {
+    width: 80%;
+    background-color: #E6D8AD;
+    font-size: 18px;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 600px;
+    border: solid;
+    border-width: 1px;
+  }
+  
+  .submit {
+      display: block;
+      width: 100%;
+      padding: auto;
+      background-color: #B87333;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-size: 18px;
+  }
+  
+  .wake-up,
+  .morn-activ {
+    margin-bottom: 15px;
+  }
+  
+  .submit:hover {
+      background-color: #654321;
+  }
